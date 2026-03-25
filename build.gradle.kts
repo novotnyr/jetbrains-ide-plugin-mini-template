@@ -34,12 +34,12 @@ intellijPlatform {
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jetbrains.intellij.platform.module")
-    kotlin {
-        jvmToolchain(21)
-    }
 }
 
 allprojects {
+    kotlin {
+        jvmToolchain(21)
+    }
     dependencies {
         intellijPlatform {
             intellijIdea("2025.3")
