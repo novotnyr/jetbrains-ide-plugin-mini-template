@@ -8,10 +8,6 @@ plugins {
 group = "com.github.novotnyr"
 version = "1.0-SNAPSHOT"
 
-kotlin {
-    jvmToolchain(21)
-}
-
 dependencies {
     intellijPlatform {
         pluginModule(implementation(project(":shared")))
@@ -38,9 +34,6 @@ intellijPlatform {
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jetbrains.intellij.platform.module")
-    kotlin {
-        jvmToolchain(21)
-    }
 }
 
 allprojects {
@@ -55,6 +48,9 @@ allprojects {
         intellijPlatform {
             intellijIdea("2025.3")
         }
+    }
+    kotlin {
+        jvmToolchain(21)
     }
 }
 
