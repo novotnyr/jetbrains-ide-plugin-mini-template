@@ -4,8 +4,8 @@
     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis tristique lacus, sit amet ullamcorper dolor pretium nec.</description>
     <vendor>SomeVendor</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
+    <content>
+        <module name="shared" />
+    </content>
 
-    <extensions defaultExtensionNs="com.intellij">
-    </extensions>
 </idea-plugin>
