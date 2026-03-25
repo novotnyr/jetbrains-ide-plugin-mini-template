@@ -24,6 +24,7 @@ intellijPlatform {
 dependencies {
     intellijPlatform {
         pluginModule(implementation(project(":shared")))
+        pluginModule(implementation(project(":css")))
         intellijIdea("2024.1")
     }
 }

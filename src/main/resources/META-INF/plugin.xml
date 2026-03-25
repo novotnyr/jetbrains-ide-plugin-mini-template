@@ -6,6 +6,7 @@
 
     <content>
         <module name="shared" />
+        <module name="css" />
     </content>
 
 </idea-plugin>
