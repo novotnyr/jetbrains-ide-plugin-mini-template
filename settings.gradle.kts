@@ -4,9 +4,3 @@ plugins {
 rootProject.name = "jetbrains-ide-plugin-mini-template"
 include("shared")
 
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-    }
-}
-
