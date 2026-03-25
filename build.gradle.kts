@@ -14,7 +14,6 @@ kotlin {
 
 dependencies {
     intellijPlatform {
-        intellijIdea("2025.3")
         pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":css")))
     }
@@ -42,11 +41,6 @@ subprojects {
     kotlin {
         jvmToolchain(21)
     }
-    dependencies {
-        intellijPlatform {
-            intellijIdea("2025.3")
-        }
-    }
 }
 
 allprojects {
@@ -56,6 +50,11 @@ allprojects {
             defaultRepositories()
         }
         maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
+    }
+    dependencies {
+        intellijPlatform {
+            intellijIdea("2025.3")
+        }
     }
 }
 
