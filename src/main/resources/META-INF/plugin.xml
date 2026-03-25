@@ -4,9 +4,8 @@
     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis tristique lacus, sit amet ullamcorper dolor pretium nec.</description>
     <vendor>SomeVendor</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
-
     <content>
-        <module name="jetbrains-ide-plugin-mini-template.shared" />
+        <module name="jetbrains-ide-plugin-mini-template.shared" loading="required" />
+        <module name="jetbrains-ide-plugin-mini-template.css"  />
     </content>
 </idea-plugin>

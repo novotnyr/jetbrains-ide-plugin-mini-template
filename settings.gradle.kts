@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "jetbrains-ide-plugin-mini-template"
 include("shared")
+include("css")
