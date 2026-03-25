@@ -1,0 +1,11 @@
+<idea-plugin>
+    <dependencies>
+        <module name="modular-plugin-mini-template.shared" />
+        <plugin id="com.intellij.css"/>
+    </dependencies>
+
+    <actions>
+        <action id=""
+                class="com.github.novotnyr.multimodule.css.CssDisplayAction"/>
+    </actions>
+</idea-plugin>

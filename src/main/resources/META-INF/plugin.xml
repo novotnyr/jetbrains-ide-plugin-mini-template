@@ -5,6 +5,7 @@
     <vendor>SomeVendor</vendor>
 
     <content>
-        <module name="shared" loading="required" />
+        <module name="modular-plugin-mini-template.shared" loading="required" />
+        <module name="modular-plugin-mini-template.css" />
     </content>
 </idea-plugin>

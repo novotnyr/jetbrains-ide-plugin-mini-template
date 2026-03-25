@@ -1,3 +1,5 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType.IntellijIdea
+
 plugins {
     kotlin("jvm") version "2.3.20"
     id("org.jetbrains.intellij.platform") version "2.13.1"
@@ -12,8 +14,9 @@ kotlin {
 
 dependencies {
     intellijPlatform {
-        intellijIdea("2024.1")
+        intellijIdea("2025.3")
         pluginModule(implementation(project(":shared")))
+        pluginModule(implementation(project(":css")))
     }
 }
 
@@ -23,7 +26,7 @@ intellijPlatform {
         version = project.version.toString()
         description = "Minimal plugin template with barebones Gradle setup"
         ideaVersion {
-            sinceBuild = "2024.1"
+            sinceBuild = "253"
         }
     }
     pluginVerification {
@@ -41,7 +44,7 @@ subprojects {
     }
     dependencies {
         intellijPlatform {
-            intellijIdea("2024.1")
+            intellijIdea("2025.3")
         }
     }
 }
@@ -54,4 +57,10 @@ allprojects {
         }
         maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
     }
+}
+
+
+val runIde261 by intellijPlatformTesting.runIde.registering {
+    type = IntellijIdea
+    version = "2026.1"
 }
