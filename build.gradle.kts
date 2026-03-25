@@ -2,7 +2,7 @@ import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType.IntellijIdea
 
 plugins {
     kotlin("jvm") version "2.3.20"
-    id("org.jetbrains.intellij.platform") version "2.13.1"
+    id("org.jetbrains.intellij.platform")
 }
 
 group = "com.github.novotnyr"
@@ -40,13 +40,6 @@ subprojects {
 }
 
 allprojects {
-    repositories {
-        mavenCentral()
-        intellijPlatform {
-            defaultRepositories()
-        }
-        maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
-    }
     dependencies {
         intellijPlatform {
             intellijIdea("2025.3")
