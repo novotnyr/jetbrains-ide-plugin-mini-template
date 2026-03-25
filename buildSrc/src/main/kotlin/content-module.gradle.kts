@@ -2,7 +2,6 @@ import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
 
 plugins {
     kotlin("jvm")
-    id("org.jetbrains.intellij.platform")
     id("org.jetbrains.intellij.platform.module")
 }
 
