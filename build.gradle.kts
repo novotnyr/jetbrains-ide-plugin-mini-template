@@ -34,6 +34,9 @@ intellijPlatform {
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jetbrains.intellij.platform.module")
+    kotlin {
+        jvmToolchain(21)
+    }
 }
 
 allprojects {
@@ -49,11 +52,7 @@ allprojects {
             intellijIdea("2025.3")
         }
     }
-    kotlin {
-        jvmToolchain(21)
-    }
 }
-
 
 val runIde261 by intellijPlatformTesting.runIde.registering {
     type = IntellijIdea
