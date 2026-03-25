@@ -1,28 +1,9 @@
 plugins {
-    kotlin("jvm") version "2.3.20"
-    id("org.jetbrains.intellij.platform") version "2.13.1"
+    id("org.jetbrains.intellij.platform")
 }
 
 group = "com.github.novotnyr"
 version = "1.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
-    intellijPlatform {
-        defaultRepositories()
-    }
-}
-
-dependencies {
-    testImplementation(kotlin("test"))
-    intellijPlatform {
-        intellijIdea("2024.1")
-    }
-}
-
-kotlin {
-    jvmToolchain(21)
-}
 
 intellijPlatform {
     pluginConfiguration {
@@ -38,4 +19,19 @@ intellijPlatform {
             recommended()
         }
     }
+}
+
+dependencies {
+    intellijPlatform {
+        pluginModule(implementation(project(":shared")))
+        intellijIdea("2024.1")
+    }
+}
+
+repositories {
+    mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
+    maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
 }
