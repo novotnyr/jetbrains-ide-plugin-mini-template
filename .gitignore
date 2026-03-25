@@ -5,3 +5,6 @@
 /.idea/junie.xml
 /build/
 /.intellijPlatform/
+/buildSrc/build/
+/buildSrc/.gradle/
+/shared/build/
