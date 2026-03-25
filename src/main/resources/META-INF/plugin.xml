@@ -1,0 +1,11 @@
+<idea-plugin>
+    <id>com.example.jetbrains.ide.plugin</id>
+    <name>Lorem Ipsum Dolor Sit Amet</name>
+    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis tristique lacus, sit amet ullamcorper dolor pretium nec.</description>
+    <vendor>SomeVendor</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+</idea-plugin>
