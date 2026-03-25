@@ -1,5 +1,5 @@
 <idea-plugin>
     <dependencies>
-        <module name="shared" />
+        <module name="modular-plugin-mini-template.shared" />
     </dependencies>
 </idea-plugin>
