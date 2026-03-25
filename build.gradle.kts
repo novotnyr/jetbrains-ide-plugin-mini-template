@@ -1,3 +1,5 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType.IntellijIdea
+
 plugins {
     id("org.jetbrains.intellij.platform")
 }
@@ -34,4 +36,9 @@ repositories {
     intellijPlatform {
         defaultRepositories()
     }
+}
+
+val runIde261 by intellijPlatformTesting.runIde.registering {
+    type = IntellijIdea
+    version = "2026.1"
 }
