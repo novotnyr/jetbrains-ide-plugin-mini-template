@@ -6,22 +6,15 @@ plugins {
 group = "com.github.novotnyr"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-    intellijPlatform {
-        defaultRepositories()
-    }
+kotlin {
+    jvmToolchain(21)
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
     intellijPlatform {
         intellijIdea("2024.1")
+        pluginModule(implementation(project(":shared")))
     }
-}
-
-kotlin {
-    jvmToolchain(21)
 }
 
 intellijPlatform {
@@ -37,5 +30,24 @@ intellijPlatform {
         ides {
             recommended()
         }
+    }
+}
+
+subprojects {
+    apply(plugin = "org.jetbrains.intellij.platform.module")
+    dependencies {
+        intellijPlatform {
+            intellijIdea("2024.1")
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        intellijPlatform {
+            defaultRepositories()
+        }
+        maven("https://packages.jetbrains.team/maven/p/ij/intellij-dependencies/")
     }
 }
