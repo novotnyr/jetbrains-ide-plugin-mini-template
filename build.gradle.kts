@@ -11,7 +11,7 @@ intellijPlatform {
         version = project.version.toString()
         description = "Minimal plugin template with barebones Gradle setup"
         ideaVersion {
-            sinceBuild = "2024.1"
+            sinceBuild = "253"
         }
     }
     pluginVerification {
@@ -25,7 +25,7 @@ dependencies {
     intellijPlatform {
         pluginModule(implementation(project(":shared")))
         pluginModule(implementation(project(":css")))
-        intellijIdea("2024.1")
+        intellijIdea("2025.3")
     }
 }
 
