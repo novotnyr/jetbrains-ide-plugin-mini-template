@@ -45,8 +45,3 @@ allprojects {
         }
     }
 }
-
-val runIde261 by intellijPlatformTesting.runIde.registering {
-    type = IntellijIdea
-    version = "2026.1"
-}
