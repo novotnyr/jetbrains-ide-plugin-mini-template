@@ -12,8 +12,6 @@ dependencies {
 
 intellijPlatform {
     pluginConfiguration {
-        name = "Minimal Plugin Template"
-        description = "Minimal plugin template with barebones Gradle setup"
         ideaVersion {
             sinceBuild = "253"
         }
