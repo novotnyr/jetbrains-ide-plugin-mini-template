@@ -31,8 +31,8 @@ intellijPlatform {
 }
 
 subprojects {
-    apply(plugin = "org.jetbrains.kotlin.jvm")
-    apply(plugin = "org.jetbrains.intellij.platform.module")
+    plugins.apply("org.jetbrains.kotlin.jvm")
+    plugins.apply("org.jetbrains.intellij.platform.module")
 }
 
 allprojects {
