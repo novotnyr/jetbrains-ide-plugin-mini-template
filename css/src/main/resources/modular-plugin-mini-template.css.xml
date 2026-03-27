@@ -5,7 +5,7 @@
     </dependencies>
 
     <actions>
-        <action id=""
+        <action id="com.github.novotnyr.multimodule.css.CssDisplayAction"
                 class="com.github.novotnyr.multimodule.css.CssDisplayAction"/>
     </actions>
 </idea-plugin>
