@@ -1,12 +1,7 @@
-import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType.IntellijIdea
-
 plugins {
     id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.intellij.platform")
 }
-
-group = "com.github.novotnyr"
-version = "1.0-SNAPSHOT"
 
 dependencies {
     intellijPlatform {
