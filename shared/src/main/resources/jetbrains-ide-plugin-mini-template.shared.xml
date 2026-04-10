@@ -1,1 +1,6 @@
-<idea-plugin />
+<idea-plugin>
+    <actions>
+        <action class="com.github.novotnyr.multimodule.shared.SharedAction"
+                id="com.github.novotnyr.multimodule.shared.SharedAction" />
+    </actions>
+</idea-plugin>
