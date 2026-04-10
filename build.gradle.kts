@@ -6,14 +6,22 @@ plugins {
 group = "com.github.novotnyr"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-    intellijPlatform {
-        defaultRepositories()
+subprojects {
+    apply(plugin = "org.jetbrains.intellij.platform.module")
+    apply(plugin = "org.jetbrains.kotlin.jvm")
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        intellijPlatform {
+            defaultRepositories()
+        }
     }
 }
 
 dependencies {
+    implementation(project(":shared"))
     testImplementation(kotlin("test"))
     intellijPlatform {
         intellijIdea("2025.2")
@@ -27,3 +35,4 @@ intellijPlatform {
         description = "Minimal plugin template with barebones Gradle setup"
     }
 }
+
