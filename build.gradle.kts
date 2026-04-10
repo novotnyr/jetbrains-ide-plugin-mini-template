@@ -16,7 +16,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     intellijPlatform {
-        intellijIdea("2024.1")
+        intellijIdea("2025.2")
     }
 }
 
