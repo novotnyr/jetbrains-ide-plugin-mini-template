@@ -14,7 +14,6 @@ subprojects {
 dependencies {
     implementation(project(":shared"))
     implementation(project(":css"))
-    testImplementation(kotlin("test"))
     intellijPlatform {
         intellijIdea("2025.2")
     }
