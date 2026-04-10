@@ -1,6 +1,12 @@
 <idea-plugin>
     <dependencies>
-        <module name="jetbrains-ide-plugin-mini-template.shared" />
+        <module name="jetbrains-ide-plugin-mini-template.shared"/>
         <plugin id="com.intellij.css"/>
     </dependencies>
+
+    <actions>
+        <action
+                id="com.github.novotnyr.multimodule.css.CssDisplayAction"
+                class="com.github.novotnyr.multimodule.css.CssDisplayAction"/>
+    </actions>
 </idea-plugin>
