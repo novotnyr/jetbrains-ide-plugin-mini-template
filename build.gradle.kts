@@ -20,22 +20,10 @@ dependencies {
     }
 }
 
-kotlin {
-    jvmToolchain(21)
-}
-
 intellijPlatform {
     pluginConfiguration {
         name = "Minimal Plugin Template"
         version = project.version.toString()
         description = "Minimal plugin template with barebones Gradle setup"
-        ideaVersion {
-            sinceBuild = "2024.1"
-        }
-    }
-    pluginVerification {
-        ides {
-            recommended()
-        }
     }
 }
