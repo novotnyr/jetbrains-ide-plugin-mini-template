@@ -19,12 +19,3 @@ dependencies {
         intellijIdea("2025.2")
     }
 }
-
-intellijPlatform {
-    pluginConfiguration {
-        name = "Minimal Plugin Template"
-        version = project.version.toString()
-        description = "Minimal plugin template with barebones Gradle setup"
-    }
-}
-

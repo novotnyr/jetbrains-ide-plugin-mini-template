@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.example.jetbrains.ide.plugin</id>
-    <name>Lorem Ipsum Dolor Sit Amet</name>
-    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis tristique lacus, sit amet ullamcorper dolor pretium nec.</description>
+    <name>Minimal Content Module Template</name>
+    <description>Minimal plugin template with barebones Gradle setup</description>
     <vendor>SomeVendor</vendor>
 
     <content>
